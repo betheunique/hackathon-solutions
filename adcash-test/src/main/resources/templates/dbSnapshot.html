@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head lang="en">
+    <title>DataBase SnapShot</title>
+</head>
+<body>
+<div class="container">
+
+    <div th:if="${not #lists.isEmpty(dbSnapshot)}">
+        <h2>Companies List</h2>
+        <table class="table table-striped">
+            <tr>
+                <th>CompanyID</th>
+                <th>Countries</th>
+                <th>Budget</th>
+                <th>Bid</th>
+                <th>Category</th>
+            </tr>
+            <tr th:each="snapshot : ${dbSnapshot}">
+                <td th:text="${snapshot.companyId}">CompanyID</td>
+                <td th:text="${snapshot.countries}">Countries</td>
+                <td th:text="${snapshot.budget}">Budget</td>
+                <td th:text="${snapshot.bid}">Bid</td>
+                <td th:text="${snapshot.category}">Category</td>
+            </tr>
+        </table>
+
+    </div>
+</div>
+
+</body>
+</html>
