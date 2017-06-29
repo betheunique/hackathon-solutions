@@ -55,3 +55,4 @@ Set 3: abc cde cdf fuf fgh
 
 The longest chain is: abc - cdf - fuf - fgh - (set changed here) - hij - jkl - lmn
 
+*Note : Put Extra efforts on unit test, clean code, code coverage, like you are shipping to your production environment.
